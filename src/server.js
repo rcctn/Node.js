@@ -3,7 +3,7 @@ import { addAbortSignal } from 'node:stream'
 
 const users = []
 
-const server = http.createServer((req, res) => {
+const server = http.createServer((req/*requisition*/, res/*response*/) => {
     const {method, url} = req
 
     if (method == 'GET' && url == '/users') {
@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
         return res.end('Criação de usuários')
     }
 
-    return res.end('d')
+    return res.end('3')
 })
 
 

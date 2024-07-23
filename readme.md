@@ -23,6 +23,7 @@ For start whe have two principals requisitions:
                 POST   /  users  => Create a new user in back-end.
 
 
+## HTTP Status Code
 
 
 ### Road to Commit
